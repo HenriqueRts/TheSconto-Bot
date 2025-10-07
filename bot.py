@@ -80,4 +80,4 @@ def post_coupon():
 if __name__ == "__main__":
     while True:
         post_coupon()
-        time.sleep(120)  # verifica a cada 1 hora
+        time.sleep(120)  # verifica a cada 2 minutos
