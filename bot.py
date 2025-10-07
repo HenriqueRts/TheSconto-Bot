@@ -66,7 +66,7 @@ def post_coupon():
     last = get_last_coupon()
 
     if latest != last:
-        tweet = f"🎟️ Novo cupom Shopee disponível!\n{latest}\n👉 https://shopee.com.br/m/cupom-de-desconto"
+        tweet = f"🎟️ Novo cupom Shopee disponível!\n{latest}\n👉 https://s.shopee.com.br/1qTERPoef6"
         try:
             api.update_status(tweet)
             print("✅ Cupom postado no Twitter!")
@@ -80,4 +80,4 @@ def post_coupon():
 if __name__ == "__main__":
     while True:
         post_coupon()
-        time.sleep(3600)  # verifica a cada 1 hora
+        time.sleep(120)  # verifica a cada 1 hora
